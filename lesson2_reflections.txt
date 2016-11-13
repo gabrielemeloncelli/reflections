@@ -35,5 +35,15 @@ which commits can be reached from any other commit, and unreachable commits
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+The result of merging two branches is to merge all the changes made to the files in both branches into the target branches.
+This results in all modifications, new features, bug fixes, etc. to appear in the resulting merged commit.
+We represent the merge as a commit having two parents, the heads of the two branches before the merge, because the merged commit keeps track of both branches.
+Including history of all the commits.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+Automatic merging does the most obviuos job when merging two commits. 
+But it makes guesses to obtain the results. These are very reasonable and agree with the intent of the modification most of the times.
+But there may be cases when the guesses are not the best ones and the result is less than optimal.
+The automatic merging, on the other side, saves a lot of time spent in examining the differences.
