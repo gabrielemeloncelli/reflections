@@ -18,10 +18,19 @@ The staging area holds the files
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+I can stage all the files after a logical change. If further changes are done in the working directory they are not saved in the commit.
+The logical change coherence is preserved.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Good examples of using branches are experimental features and new functionalities and/or layouts.
+The branches can maintain a main version, working as expected for the original specifications.
+
 How do the diagrams help you visualize the branch structure?
+
+The diagrams display all the structure of the single commits and show clearly which commits are on which branches,
+which commits can be reached from any other commit, and unreachable commits
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
